@@ -51,11 +51,15 @@ export type PostCover = PostCoverFormat & {
   updated_by: number;
   created_at: string;
   updated_at: string;
-  formats: {
-    thumbnail: PostCoverFormat;
-    small: PostCoverFormat;
-    medium: PostCoverFormat;
-    large: PostCoverFormat;
+  data: {
+    attributes: {
+      formats: {
+        thumbnail: PostCoverFormat;
+        small: PostCoverFormat;
+        medium: PostCoverFormat;
+        large: PostCoverFormat;
+      };
+    };
   };
 };
 
